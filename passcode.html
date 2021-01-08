@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <label for="fname">Passcode please:</label><br>
+  <input id="pass" type="text" id="fname" name="fname"><br>
+  <button onclick="check()">Go!</button>
+
+  <script>
+    function check() {
+      if (document.getElementById('pass').value == 'group.csa') {
+        window.location.assign(new URLSearchParams(window.location.search).get('target'));
+      }
+    }
+  </script>
+  <h3>these are clues</h3>
+  <ul>
+  <li>The first word of this code is a.....of people</li>
+  <li>the second is a 'dot'</li>
+  <li>and the third word is a link showed in home page</li>
+</ul>
+</body>
+</html>
